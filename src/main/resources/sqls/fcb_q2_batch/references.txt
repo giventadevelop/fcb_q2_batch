@@ -1,0 +1,16 @@
+https://javatechonline.com/spring-boot-batch-example-csv-to-mysql-using-jpa/
+--Spring jpa query tables without entity id spring boot?
+https://stackoverflow.com/questions/71177494/is-it-possible-to-use-jparepository-without-entity
+--spring batch read data from Meta-Data Schema tables
+# Usage of jdbcTemplate
+https://github.com/spring-projects/spring-batch/issues/1844
+https://github.com/arey/spring-batch-toolkit/blob/spring-batch-toolkit-4.0.0/src/main/java/com/javaetmoi/core/batch/tasklet/RemoveSpringBatchHistoryTasklet.java#L76
+# spring-batch-admin
+https://docs.spring.io/spring-batch-admin/2.x/reference/reference.xhtml
+https://github.com/damienbeaufils/spring-boot-with-spring-batch-admin
+https://github.com/codecentric/spring-batch-admin-spring-boot
+https://codenotfound.com/spring-batch-admin-example.html
+https://www.educba.com/spring-batch-admin/
+# Main spring batch admin
+https://www.educba.com/spring-batch-admin/
+
