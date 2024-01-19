@@ -1,0 +1,17 @@
+Select JOB_EXECUTION_ID, TYPE_CD, KEY_NAME, STRING_VAL, DATE_VAL, LONG_VAL, DOUBLE_VAL, IDENTIFYING from fcb_q2_batch.batch_job_execution_params
+USE fcb_q2_batch;
+
+CREATE TABLE `batch_job_execution_params` (
+  `JOB_EXECUTION_ID` bigint NOT NULL,
+  `TYPE_CD` varchar(6) NOT NULL,
+  `KEY_NAME` varchar(100) NOT NULL,
+  `STRING_VAL` varchar(250) DEFAULT NULL,
+  `DATE_VAL` datetime(6) DEFAULT NULL,
+  `LONG_VAL` bigint DEFAULT NULL,
+  `DOUBLE_VAL` double DEFAULT NULL,
+  `IDENTIFYING` char(1) NOT NULL,
+  KEY `JOB_EXEC_PARAMS_FK` (`JOB_EXECUTION_ID`),
+  CONSTRAINT `JOB_EXEC_PARAMS_FK` FOREIGN KEY (`JOB_EXECUTION_ID`) REFERENCES `batch_job_execution` (`JOB_EXECUTION_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
